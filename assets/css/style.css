@@ -1,0 +1,55 @@
+h1,
+h2,
+h3 {
+  color: #4aaaa5;
+  font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+.wrapper {
+  width:960px;
+}
+
+.sidebar {
+  float:right;
+  width:270px;
+}
+
+}
+.main {
+  width:650px;
+}
+#jamiePic {
+  width: 100px;
+  height: auto;
+  float:left;
+}
+#navLinks {
+  list-style-type: none;
+}
+
+#navLinks li {
+  float: right;
+}
+
+#navLinks li a {
+  text-align: center;
+  text-decoration: none;
+  padding: 14px 16px;
+}
+.nameHeader {
+  color:white;
+  background: #4aaaa5;
+  display:block;
+  float:left;
+  text-align:center;
+  margin-left:50px;
+  padding:0px;
+  width:25%;
+}
+#header {
+
+}
+#sidebar a {
+
+
+
