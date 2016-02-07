@@ -1,24 +1,29 @@
 /* Main  */
 body {
 	width: 100%;
-
 }
 .wrapper {
 	width:960px;
 	margin:0 auto;
-	background-image: url('..images/small_steps');
+	
+}
+.background {
+	background-image: url('../images/small_steps.png');
+	overflow: auto;
 }
 .main h2 {
-font-size: 24px;
-padding:25px 0px 25px 0px;
-border-bottom: 1px solid #9d9991;
+font-size: 1.9em;
+font-weight: bold;
+padding:15px 0px 25px 0px;
+border-bottom: 1px solid #dddddd;
 }
-/* End Main */
+/********* END MAIN ***********/
 
-/* Navigational Links and Header*/
+/********* NAVIGATIONAL LINKS AND HEADER *********/
 .header {
 	width: 100%;	
 	overflow: auto;
+	border-bottom: 1px solid #cccccc;
 }
 
 .nameHeader {
@@ -30,15 +35,8 @@ border-bottom: 1px solid #9d9991;
 	margin: 20px 0px 0px 240px;
 	padding: 15px;
 	font-size: 2em;
+	font-weight: bold;
 }
-
-}
-#jamiePic {
-  width: 100px;
-  height: auto;
-  float:left;
-}
-
 .siteTravel .navLinks {
 	float:right;
 	margin:15px 180px 0px 0px;
@@ -54,19 +52,15 @@ border-bottom: 1px solid #9d9991;
 	font-size: 24px;
 	list-style-type: none; 
 }
-/* End Navigational Links */
+/******** END NAVIGATIONAL LINKS **********/
 
-/* Index.html */
+/******* INDEX.HTML **********/
 
 #jamiePic {
-	width:140px;
-	height:140px;
+	width:30%;
+	height:auto;
 	float:left;
-	padding:25px 5px;
-}
-#jamiePic:hover {
-  width:200px;
-  height:200px;
+	padding:25px 20px 0px 0px;
 }
 .main {
 	width: 600px; 
@@ -74,7 +68,7 @@ border-bottom: 1px solid #9d9991;
 	float: left;
 	background-color: #ffffff;
 	padding: 25px 35px;
-	border: 1px solid gray;
+	border: 1px solid #dddddd;
 	margin:30px 10px 9.269% 0px;
 }
 .main p {
@@ -82,46 +76,42 @@ border-bottom: 1px solid #9d9991;
 	padding-top: 20px;
 	margin-bottom: 25px;
 	font-size: 20;
+	font-weight: bold;
 }
 .aboutMe {
 	color:#4aaaa5;
 }
 
-/* End Index.html */
+/******** END INDEX.HTML ********/
 
-/* Sidebar */
+/******* SIDEBAR ********/
 .sideBar h2 {
 	text-align: center;
-	border-bottom:1px solid gray;
-    border-width: 1px;
+	border-bottom:1px solid #dddddd;
 	padding-bottom: 20px;
-	font-size: 20px;
+	font-size: 23px;
+	font-weight:bolder;
 }
 .sideBar {
 	width: 250px;
 	float:right;
-	border: 1px solid gray;
+	border: 1px solid #dddddd;
 	background-color: #ffffff;
-    margin:30px 0px 0px 10px;
+    margin:30px 0px 0px 0px;
 }
 .sideBar img {
 	width:60px;
 	height: 60px;
-	padding:20px 0px 0px 20px;
+	padding:25px 5px 25px 10px;
 }
-.sideBar img:hover{
-  	width:65px;
-    height:65px;
-}
-
 .connect {
 	color: #4aaaa5;
     padding-top:20px;
 }
 
-/* End Sidebar */
+/******** END SIDEBAR *********/
 
-/* Footer */
+/******* FOOTER *******/
 
 .footer .footerNote {
 	text-align: center;
@@ -134,8 +124,35 @@ border-bottom: 1px solid #9d9991;
 	padding-top: 35px;
  	border-top:6px solid #4aaaa5;
 }
+/******* FOOTER *********/
 
+/******* FONT STYLING *******/
+body, .navLinks {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color:#777777;
+}
+h1, h2 {
+	
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
 
+/******* END FONT STYLING *******/
 
-/* Footer */
+/******* HOVER EFFECTS ******/
 
+.sideBar img:hover{
+  	width:72px;
+    height:auto;
+}
+.contact:active, .about:active, .portfolio:active {
+	background-color: #4aaaa5;
+	color:white;
+	padding:14px;
+}
+#jamiePic:active {
+  width:275px;
+  height:275px;
+  position:absolute;
+}
+
+/******* END HOVER EFFECTS ******/
