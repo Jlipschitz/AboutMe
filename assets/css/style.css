@@ -1,43 +1,117 @@
-h1,
-h2,
-h3 {
-  color: #4aaaa5;
-  font-family: 'Georgia', Times, Times New Roman, serif;
+/* Main  */
+body {
+	width: 100%;
+background-image: url('../images/linedPaper_Large');
 }
+.wrapper {
+	width:960px;
+	margin:0 auto;
+}
+
+.main h2 {
+font-size: 24px;
+padding:25px 0px 25px;
+border-bottom: 1px solid blue;
+}
+/* End Main */
+
+/* Navigational Links and Header*/
+.header {
+	width: 100%;
+	overflow: auto;
+	background-color: gray;
+}
+
+.nameHeader {
+	float:left;
+	display: block;
+	color:white;
+	background-color:#4aaaa5;
+	text-align: center;
+	margin: 20px 0px 0px 0px;
+	padding: 15px;
+	font-size: 2em;
+}
+
+.siteTravel .navLinks {
+	float:right;
+}
+.siteTravel li {
+	padding:5px 5px;
+	display: inline-block;
+	margin-top: 14px;
+	margin-right: 20px;
+}
+.siteTravel a {
+	text-decoration: none;
+	font-size: 24px;
+}
+/* End Navigational Links */
+
+/* Index.html */
 
 #jamiePic {
-  width: 600px;
-  height: auto;
+	width:140px;
+	height:140px;
+	float:left;
+	padding:25px 5px;
 }
-header {
-  display:inline-block;
-  width:100%;
-  padding:0px;
-  margin:0px;
+.main {
+	width: 650px; 
+	overflow: auto;
+	float: left;
+	background-color: #ffffff;
+	padding: 25px 35px;
+	border: 1px solid blue;
+	margin:30px 10px 30px 0px;
 }
-#navLinks {
-  list-style-type: none;
-  border:2px dotted black;
+.contentIndex p {
+	line-height: 200%;
+	padding-top: 20px;
+	margin-bottom: 25px;
+	font-size: 20;
+}
+.aboutMe {
+	color:#4aaaa5;
 }
 
-#navLinks li {
-  float: right;
+/* End Index.html */
+
+/* Sidebar */
+.sideBar h2 {
+	text-align: center;
+	border-bottom:1px solid blue;
+	padding-bottom: 20px;
+	font-size: 20px;
+}
+.sideBar {
+	width: 270px;
+	float:right;
+	border: 1px solid blue;
+	background-color: #ffffff;
+}
+.sideBar img {
+	width:60px;
+	height: 60px;
+	padding:20px 0px 0px 20px;
+}
+.connect {
+	color: #4aaaa5;
 }
 
-#navLinks li a {
-  text-align: center;
-  text-decoration: none;
-  padding: 14px 16px;
+/* End Sidebar */
+
+/* Footer */
+
+.footer .footerNote {
+	text-align: center;
 }
-.nameHeader {
-  color:white;
-  background: #4aaaa5;
-  text-align:center;
-  margin-left:50px;
-  padding:0px;
-  width:25%;
-  border:2px dotted black;
+.footer {
+	height: 50px;
+	background-color: gray;
+	clear:both;
+	color:white;
+	padding-top: 35px;
 }
-header {
-  background-color:white;
-}
+
+/* Footer */
