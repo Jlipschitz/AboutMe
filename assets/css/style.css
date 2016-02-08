@@ -29,7 +29,7 @@ color:#4aaaa5;
 	overflow: auto;
 	float: left;
 	background-color: #ffffff;
-	padding: 45px 45px 5px 30px;
+	padding: 45px 41px 5px 35px;
 	border: 1px solid #dddddd;
 	margin:50px 20px 40px 0px;
 }
@@ -76,7 +76,7 @@ color:#4aaaa5;
 	width:30%;
 	height:auto;
 	float:left;
-	padding:25px 20px 0px 10px;
+	padding:25px 20px 0px 0px;
 }
 
 .main #indexPara {
@@ -93,6 +93,7 @@ color:#4aaaa5;
 #hangman, #rpgGame, #triviaGame, #rutgerInfo, #rockPS {
 	width: 285px;
 	padding: 45px 5px 5px 5px;
+	position: relative;
 }
 #rockPS {
 	padding-bottom: 50px;
@@ -100,9 +101,9 @@ color:#4aaaa5;
 #rpgGame, #rutgerInfo {
 padding-left: 25px;
 }
-/********* END PORTFOLIO *********/
+/********* END PORTFOLIO.HTML *********/
 
-/********* START CONTACT *********/
+/********* START CONTACT.HTML *********/
 #email, #name{
 	font-weight:bolder;
 	display: block;
@@ -141,7 +142,7 @@ padding: 5px;
 	margin:10px 0px 30px 0px;
 }
 
-/********* END CONTACT *********/
+/********* END CONTACT.HTML *********/
 
 /******* SIDEBAR ********/
 .sideBar h2 {
@@ -162,7 +163,8 @@ padding: 5px;
 .sideBar img {
 	width:55px;
 	height: 55px;
-	padding:25px 0px 25px 15px;
+	margin: 25px 10px 10px 6px;
+	padding-left: 5px;
 	border:0;
 	border-style: none;
 }
@@ -209,13 +211,18 @@ h1, h2 {
 /******* STYLE EFFECTS ******/
 
 .sideBar img:hover{
-  	width:72px;
     height:auto;
+    margin-bottom: 0.1px;
+    opacity: 0.88;
+    -webkit-transition: margin 0.3s ease-out;
+    -moz-transition: margin 0.3s ease-out;
+    -o-transition: margin 0.3s ease-out;
 }
 .navLinks a:hover {
-	color:white !important;
-	background-color: gray;
-	padding:14px;
+	font-size: 25px;
+	background-color: #f2f2f2;
+	padding:12px;
+	margin-bottom: 30px !important;
 }
 #jamiePic:active {
   width:275px;
