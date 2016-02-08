@@ -7,12 +7,14 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script>
+    //for IE 8 and below
     	document.createElement('header'); document.createElement('footer'); document.createElement('section'); document.createElement('article'); document.createElement('aside'); document.createElement('nav');
    </script>
     <title>Jamie Lipschitz</title>
   </head>
 
   <body>
+  	<div class="wrapper">
       <header class="header">
           <h1 class="nameHeader">Jamie Lipschitz</h1>
           <nav class="siteTravel">
@@ -25,12 +27,12 @@
       </header>
       <!-- end of div header -->
       <div class="background">
-      <div class="wrapper">
+      <div class="content">
 	      <div class="main">
-	        <h2 class="aboutMe">About me</h2>
+	        <h2 class="mainH2">About me</h2>
 	        <img id="jamiePic" src="assets/images/jamie_Avatar.jpg" alt="Jamie Lipschitz"> 
-	        <p>Lorem ipsum dolor sit amet, stet menandri ne pro. Ut bonorum forensibus pro, vero eruditi albucius in pro. Eius antiopam consequat eos ea, mei idque eligendi perpetua ad. Dicta assueverit mea te, ex quo essent possim.</p>
-	        <p>Fabulas blandit pericula ea nam, ea vivendum hendrerit sed. Quo vero autem an. Iusto posidonium efficiendi te per, quot pertinacia mei ne. An vitae tractatos sed, nobis quando qui id, ei sea ignota delenit corpora. Appellantur efficiantur
+	        <p id="indexPara">Lorem ipsum dolor sit amet, stet menandri ne pro. Ut bonorum forensibus pro, vero eruditi albucius in pro. Eius antiopam consequat eos ea, mei idque eligendi perpetua ad. Dicta assueverit mea te, ex quo essent possim.</p>
+	        <p id="indexPara">Fabulas blandit pericula ea nam, ea vivendum hendrerit sed. Quo vero autem an. Iusto posidonium efficiendi te per, quot pertinacia mei ne. An vitae tractatos sed, nobis quando qui id, ei sea ignota delenit corpora. Appellantur efficiantur
 			eos ea, vel integre platonem vituperatoribus ei. Sit ad sonet luptatum. Ubique percipit in sit. No solum eligendi incorrupte per, no mea eleifend volutpat recteque. Et his rationibus consetetur inciderint, ex nec recteque principes. Ius
 			cu iusto facete iracundia, at falli exerci vis, et deserunt signiferumque mei. </p>
 	        </div>
@@ -40,13 +42,15 @@
 		        <img class="sideImage" src="assets/images/github_Logo.png" alt="GitHub" />
 		        <img class="sideImage" src="assets/images/linkedIN_Logo.png" alt="LinkedIn" />
 		        <img class="sideImage" src="assets/images/stackOver_Logo.png" alt="StackOverFlow" />
-		    </div>
-		 </div>   
-    </div>
+		    </div> <!-- end sidebar -->
+		 </div>  
+    	</div>
+    <div class="push"></div>
     <!-- end of div wrapper -->
-    <footer class="footer">
+    <div class="footer">
       <p class="footerNote">&copy;Copyright 2016 Jamie Lipschitz</p>
-    </footer>
+    </div>
+    </div>
   </body>
 
 </html>

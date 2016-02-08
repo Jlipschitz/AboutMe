@@ -1,21 +1,37 @@
-/* Main  */
+html,
 body {
-	width: 100%;
+	margin:0;
+	padding:0;
+	height:100%;
 }
 .wrapper {
+	min-height: 100%;
+	position:relative;
+}
+/******* MAIN *********/
+.content {
 	width:960px;
 	margin:0 auto;
-	
 }
 .background {
-	background-image: url('../images/small_steps.png');
+	background: url('../images/small_steps.png');
 	overflow: auto;
 }
 .main h2 {
 font-size: 1.9em;
 font-weight: bold;
 padding:15px 0px 25px 0px;
-border-bottom: 1px solid #dddddd;
+border-bottom: 3px solid #dddddd;
+color:#4aaaa5;
+}
+.main {
+	width: 620px; 
+	overflow: auto;
+	float: left;
+	background-color: #ffffff;
+	padding: 45px 45px 5px 30px;
+	border: 1px solid #dddddd;
+	margin:50px 20px 40px 0px;
 }
 /********* END MAIN ***********/
 
@@ -23,7 +39,7 @@ border-bottom: 1px solid #dddddd;
 .header {
 	width: 100%;	
 	overflow: auto;
-	border-bottom: 1px solid #cccccc;
+	border-bottom: 3px solid #cccccc;
 }
 
 .nameHeader {
@@ -33,7 +49,7 @@ border-bottom: 1px solid #dddddd;
 	background-color:#4aaaa5;
 	text-align: center;
 	margin: 20px 0px 0px 240px;
-	padding: 15px;
+	padding: 27px;
 	font-size: 2em;
 	font-weight: bold;
 }
@@ -60,49 +76,98 @@ border-bottom: 1px solid #dddddd;
 	width:30%;
 	height:auto;
 	float:left;
-	padding:25px 20px 0px 0px;
+	padding:25px 20px 0px 10px;
 }
-.main {
-	width: 600px; 
-	overflow: auto;
-	float: left;
-	background-color: #ffffff;
-	padding: 25px 35px;
-	border: 1px solid #dddddd;
-	margin:30px 10px 9.269% 0px;
-}
-.main p {
+
+.main #indexPara {
 	line-height: 200%;
 	padding-top: 20px;
-	margin-bottom: 25px;
+	margin-bottom: 50px;
 	font-size: 20;
 	font-weight: bold;
-}
-.aboutMe {
-	color:#4aaaa5;
 }
 
 /******** END INDEX.HTML ********/
 
+/******** START PORTFOLIO ********/
+#hangman, #rpgGame, #triviaGame, #rutgerInfo, #rockPS {
+	width: 285px;
+	padding: 45px 5px 5px 5px;
+}
+#rockPS {
+	padding-bottom: 50px;
+}
+#rpgGame, #rutgerInfo {
+padding-left: 25px;
+}
+/********* END PORTFOLIO *********/
+
+/********* START CONTACT *********/
+#email, #name{
+	font-weight:bolder;
+	display: block;
+	width: 600px;
+	padding: 8px;
+	vertical-align: center;
+	font-size: 17px;
+}
+#inputTitle {
+	padding:10px 0px 10px 0px;
+}
+label {
+	font-size: 24px;
+	padding-bottom: 10px;
+	line-height: 60px;
+}
+textarea {
+height: 170px;
+width: 610px;
+max-width: 610px;
+max-height: 170px;
+display: block;
+padding: 5px;
+}
+#submit {
+	font-size: 24px;
+	background-color: #4aaaa5;
+	box-shadow: none;
+	width: 130px;
+	height: 50px;
+	padding:5px;
+	color: white;
+	text-align: center;
+	border:none;
+	text-decoration: none;
+	margin:10px 0px 30px 0px;
+}
+
+/********* END CONTACT *********/
+
 /******* SIDEBAR ********/
 .sideBar h2 {
 	text-align: center;
-	border-bottom:1px solid #dddddd;
 	padding-bottom: 20px;
 	font-size: 23px;
 	font-weight:bolder;
+	border-bottom: 3px solid #dddddd;
 }
 .sideBar {
-	width: 250px;
+	width: 240px;
 	float:right;
 	border: 1px solid #dddddd;
 	background-color: #ffffff;
-    margin:30px 0px 0px 0px;
+    margin:50px 0px 0px 0px;
+    height:175px;
 }
 .sideBar img {
-	width:60px;
-	height: 60px;
-	padding:25px 5px 25px 10px;
+	width:55px;
+	height: 55px;
+	padding:25px 0px 25px 15px;
+	border:0;
+	border-style: none;
+}
+.sideBar a {
+	outline:none;
 }
 .connect {
 	color: #4aaaa5;
@@ -115,14 +180,18 @@ border-bottom: 1px solid #dddddd;
 
 .footer .footerNote {
 	text-align: center;
+	padding-top: 40px;
 }
 .footer {
-	height: 50px;
 	background-color: #666666;
-	clear:both;
 	color:white;
-	padding-top: 35px;
- 	border-top:6px solid #4aaaa5;
+ 	border-top:8.5px solid #4aaaa5;
+ 	width: 100%;
+ 	height: 100px;
+ 	position: absolute;
+ 	bottom: 0;
+ 	left: 0;
+ 	overflow: hidden;
 }
 /******* FOOTER *********/
 
@@ -132,7 +201,6 @@ body, .navLinks {
 	color:#777777;
 }
 h1, h2 {
-	
 	font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -144,9 +212,9 @@ h1, h2 {
   	width:72px;
     height:auto;
 }
-.contact:active, .about:active, .portfolio:active {
-	background-color: #4aaaa5;
-	color:white;
+.navLinks a:hover {
+	color:white !important;
+	background-color: gray;
 	padding:14px;
 }
 #jamiePic:active {
@@ -154,21 +222,9 @@ h1, h2 {
   height:275px;
   position:absolute;
 }
-a:visited{
+.navLinks li a:visited{
 	text-decoration: none;
+	color:#777777;
 }
 
 /******* STYLE EFFECTS ******/
-* {
-	margin: 0;
-}
-html, body {
-	height: 100%;
-}
-.wrapper {
-	min-height: 100%;
-	margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
-}
-footer, .push {
-	height: 155px; /* '.push' must be the same height as 'footer' */
-}

@@ -6,45 +6,51 @@
     <meta name="description" content="Jamie Development Web Page">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script>
+    //for IE 8 and below
+    	document.createElement('header'); document.createElement('footer'); document.createElement('section'); document.createElement('article'); document.createElement('aside'); document.createElement('nav');
+   </script>
     <title>Jamie Lipschitz</title>
   </head>
 
   <body>
-    
-    	<div class="header">
-      <header>
+  <div class="wrapper">
+      <header class="header">
         <h1 class="nameHeader">Jamie Lipschitz</h1>
-        </header>
         <nav class="siteTravel">
-          <ul>
+          <ul class="navLinks">
             <li class="about"><a href="index.html">About</a></li>
             <li class="portfolio"><a href="portfolio.html">Portfolio</a></li>
             <li class="contact"><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-      
-      </div> <!-- end of header -->
-      <div class="wrapper">
-      </header>
+       </header><!-- end of header -->
+       <div class="background">
+      <div class="content">
       <div class="main">
-        <h2>Contact</h2>
-        <P>Name</p>
-        <input type="text" placeholder="John Smith" />
-        <p>Email</p>
-        <input type="email" placeholder="example@gmail.com" />
-        <p>Message</p>
-        <textarea></textarea>
+        <h2 class="mainH2">Contact</h2>
+        <label for="name"><span id="inputTitle">Name</span></label>
+        <input id="name" type="text" placeholder="John Smith" />
+        <label for="email"><span id="inputTitle">Email</span></label>
+        <input id="email" type="email" placeholder="example@gmail.com" />
+        <label for="message"><span id="inputTitle">Message</span></label>
+        <textarea id="message"></textarea>
         <br>
-        <button type="button">Submit</button>
+        <input id="submit" type="submit" value="Submit">
       </div>
        <div class="sideBar">
         <h2 class="connect">Connect with Me</h2>
-        <img class="github" src="assets/images/github_Logo.png" alt="GitHub" />
-        <img class="linkedIN" src="assets/images/linkedIN_Logo.png" alt="LinkedIn" />
-        <img class="stackOverFlow" src="assets/images/stackOver_Logo.png" alt="StackOverFlow" />
+        <a href="https://github.com/Jlipschitz">
+        <img class="github" src="assets/images/github_Logo.png" alt="GitHub"></a> 
+        <a href="https://www.linkedin.com/">
+        <img class="linkedIN" src="assets/images/linkedIN_Logo.png" alt="LinkedIn" /></a>
+        <a href="http://stackoverflow.com/users/4147612/censored">
+        <img class="stackOverFlow" src="assets/images/stackOver_Logo.png" alt="StackOverFlow" /></a>
       </div>
     </div>
+
     <!-- end of wrapper -->
+    <div class="push"></div>
    		<div class="footer">
     <footer>
       <p class="footerNote">&copy;Copyright 2016 Jamie Lipschitz</p>
