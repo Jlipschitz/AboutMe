@@ -21,7 +21,7 @@ body {
 .background {
   background: url('../images/small_steps.png') repeat;
   overflow: auto;
-  height: 1000px;
+  height: 1040px;
 }
 
 .main h2 {
@@ -138,6 +138,9 @@ body {
   width: 285px;
   padding: 9.5px;
 }
+#hangDiv, #rpgDiv {
+	padding-top:30px;
+}
 
 .portText {
   position: absolute;
@@ -152,24 +155,24 @@ body {
 }
 
 #hangText {
-  top: 430px;
+  top: 453px;
 }
 
 #triviaText {
-  top: 645px;
+  top: 668px;
 }
 
 #rockText {
-  top: 859px;
+  top: 882px;
 }
 
 #rutText {
-  top: 645px;
+  top: 668px;
   right: 542px;
 }
 
 #rpgText {
-  top: 430px;
+  top: 453px;
   right: 542px;
 }
 
@@ -385,9 +388,11 @@ h2 {
 #rpgText:hover {
   color: #4aaaa5;
   background-color: #f2f2f2;
+  font-style: bolder;
   transition: all 500ms linear;
   transition-delay: 0.5s;
   transition: all 1s ease-in-out;
+  font-size: 20px;
 }
 
 
